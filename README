@@ -1,0 +1,6 @@
+This simple project shows how you can use Google Sheet as your foem data store. So instead of having to set up special serverside code to collect your web form data and then sort later, you can simply take the information directly onto your Goofle sheet (Google's alternative to Microsoft's exel sheet). Google sheet is free and online all you have to access it is your Gmail account.
+Every other detail of this code is on the Youtube video I made:
+
+You can find this form live on Github pages at this link:
+
+With love by @AnatuTech

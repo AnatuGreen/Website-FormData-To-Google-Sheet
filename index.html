@@ -11,28 +11,24 @@
 <div class="form-container">
 
   <h2>Anatu Tech Youtube Channel Subscribers</h2>
-  <form id="myForm">
-    <div class="form-group">
-      <label for="firstName">First Name:</label>
+  <form id="myForm" action="https://script.google.com/macros/s/AKfycbxj_l5TpLM8ZOlEOZnoDsmJBZ60RkgVBNX_Ge5t_rHQb0rIjKI42KJD-xMF8b69ai9cfQ/exec" method="post">
+
+      <label for="FirstName">First Name:</label>
       <input type="text" id="firstName" name="FirstName" required>
-    </div>
-    <div class="form-group">
-      <label for="lastName">Last Name:</label>
+      <label for="LastName">Last Name:</label>
       <input type="text" id="lastName" name="LastName" required>
-    </div>
-    <div class="form-group">
+
+
       <label for="age">Age:</label>
       <input type="number" id="age" name="Age" required>
-    </div>
-    <div class="form-group">
+
       <label for="gender">Select Gender:</label>
       <select id="gender" name="Gender">
         <option value="male">Male</option>
         <option value="female">Female</option>
         <option value="other">Other</option>
       </select>
-    </div>
-    <div class="form-group">
+
       <label for="country">Select Country:</label>
       <select id="country" name="Country">
         <option value="usa">USA</option>
@@ -42,35 +38,64 @@
         <option value="others">Others</option>
         <!-- Add more options here -->
       </select>
-    </div>
-    <div class="form-group">
+
       <label for="phoneNumber">Phone Number:</label>
       <input type="text" id="phoneNumber" name="PhoneNumber" required>
-    </div>
-    <div class="form-group">
+
       <label for="email">Email:</label>
       <input type="text" id="email" name="Email" required>
-    </div>
-    <div class="form-group">
+
+      <!-- <input type="range" name="volume" min="0" max="100" step="1">
+      <input type="color" name="preferred_color"> -->
+      <!-- <input type="number" name="quantity" min="1" max="10" step="1"> -->
+      <!-- <input type="datetime-local" name="event_datetime"> -->
+      <!-- <input type="file" name="file_upload">
+      <input type="date"> -->
+
       <label for="message">Message:</label>
-      <input type="text" id="message" name="Message" required>
-    </div>
-    <button type="submit">Submit</button>
+      <textarea autocapitalize="word" type="text" id="message" name="Message" required></textarea><br>
+    <input class="submitButton" type="submit" value="submit" />
   </form>
 </div>
-<script>
-  const form = document.getElementById('myForm');
+<!-- Modal HTML -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p id="modalMessage"></p>
+  </div>
+</div>
 
-  form.addEventListener('submit', function(event) {
-    event.preventDefault();
-    const formData = new FormData(form);
-    const formDataObject = {};
-    formData.forEach((value, key) => {
-      formDataObject[key] = value;
-    });
-    console.log(formDataObject);
-    // You can send the form data to a server or perform other actions here
-  });
+<!-- <div>
+  <textarea name="response" rows="10" cols="30" maxlength=”200”>
+
+  </textarea>
+</div> -->
+
+<!-- <div>
+  <details>
+    <summary>Details</summary>
+    Something small enough to escape casual notice.
+  </details>
+</div>
+
+<div>
+  <table style="color: aliceblue;">
+    <tr>
+        <td>Falafel</td>
+        <td>$10.00</td>
+    </tr>
+    <tr>
+        <td>Pasta Salad</td>
+        <td>$12.00</td>
+    </tr>
+    <tr>
+        <td>Dessert</td>
+        <td>$8.00</td>
+    </tr>
+</table>
+</div> -->
+
+<script src="index.js">
 </script>
 </body>
 </html>
